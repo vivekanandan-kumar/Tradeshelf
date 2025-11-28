@@ -1,0 +1,296 @@
+{% extends 'trading/base.html' %}
+{% load static %}
+
+{% block title %}{{ level.symbol.symbol }} Details - TradeShelf{% endblock %}
+
+{% block content %}
+<div class="fade-in">
+    <!-- Back Button -->
+    <div class="mb-6">
+        <a href="{% url 'trading:camarilla_levels' %}"
+           class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+            </svg>
+            Back to Levels
+        </a>
+    </div>
+
+    <!-- Symbol Header -->
+    <div class="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg shadow-lg p-8 mb-6 text-white">
+        <div class="flex items-center justify-between">
+            <div>
+                <h1 class="text-4xl font-bold mb-2">{{ level.symbol.symbol }}</h1>
+                <div class="flex items-center space-x-4 text-blue-200">
+                    <span class="flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/>
+                        </svg>
+                        {{ level.symbol.instrument_type }}
+                    </span>
+                    <span class="flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        {{ level.trade_date|date:"d B Y" }}
+                    </span>
+                    <span class="flex items-center">
+    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+    </svg>
+    Expiry: {% if level.expiry_date %}{{ level.expiry_date.expiry_date|date:"d M Y" }}{% else %}-{% endif %}
+</span>
+                </div>
+            </div>
+            <div class="text-right">
+                <button onclick="window.print()"
+                        class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                    <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+                    </svg>
+                    Print
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Previous Day OHLC -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Previous Day Data</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="text-center p-4 bg-green-50 rounded-lg">
+                <div class="text-sm text-green-700 font-medium mb-2">High</div>
+                <div class="text-3xl font-bold text-green-800">{{ level.prev_high }}</div>
+            </div>
+            <div class="text-center p-4 bg-red-50 rounded-lg">
+                <div class="text-sm text-red-700 font-medium mb-2">Low</div>
+                <div class="text-3xl font-bold text-red-800">{{ level.prev_low }}</div>
+            </div>
+            <div class="text-center p-4 bg-blue-50 rounded-lg">
+                <div class="text-sm text-blue-700 font-medium mb-2">Close</div>
+                <div class="text-3xl font-bold text-blue-800">{{ level.prev_close }}</div>
+            </div>
+            <div class="text-center p-4 bg-purple-50 rounded-lg">
+                <div class="text-sm text-purple-700 font-medium mb-2">Range</div>
+                <div class="text-3xl font-bold text-purple-800">
+                    {{ level.prev_high|add:"-"|add:level.prev_low|floatformat:2 }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trading Levels - Detailed Cards -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+        <!-- H4 - Long Breakout -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-teal-500 to-teal-600 p-6 text-white">
+                <h3 class="text-2xl font-bold mb-2">H4 - Long Breakout</h3>
+                <p class="text-teal-100">Strong bullish breakout level</p>
+            </div>
+            <div class="p-6 space-y-4">
+                <div class="flex items-center justify-between p-4 bg-teal-50 rounded-lg">
+                    <span class="font-semibold text-gray-700">Entry Level</span>
+                    <span class="text-2xl font-bold text-teal-700">{{ level.h4_level }}</span>
+                </div>
+                <div class="flex items-center justify-between p-4 bg-red-50 rounded-lg">
+                    <span class="font-semibold text-gray-700">Stop Loss</span>
+                    <span class="text-2xl font-bold text-red-700">{{ level.h4_sl }}</span>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                        <span class="text-sm font-semibold text-gray-700">Target 1 🎯</span>
+                        <span class="text-lg font-bold text-green-700">{{ level.h4_target1 }}</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-green-100 rounded-lg border-l-4 border-green-600">
+                        <span class="text-sm font-semibold text-gray-700">Target 2 🎯🎯</span>
+                        <span class="text-lg font-bold text-green-800">{{ level.h4_target2 }}</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-green-200 rounded-lg border-l-4 border-green-700">
+                        <span class="text-sm font-semibold text-gray-700">Target 3 🎯🎯🎯</span>
+                        <span class="text-lg font-bold text-green-900">{{ level.h4_target3 }}</span>
+                    </div>
+                </div>
+                <div class="pt-4 border-t">
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <span class="text-gray-600">Risk:</span>
+                            <span class="font-bold text-red-600">{{ level.h4_level|add:"-"|add:level.h4_sl|floatformat:2 }}</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-600">Reward (T1):</span>
+                            <span class="font-bold text-green-600">{{ level.h4_target1|add:"-"|add:level.h4_level|floatformat:2 }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- H3 - Reversal Sell -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-yellow-500 to-yellow-600 p-6 text-white">
+                <h3 class="text-2xl font-bold mb-2">H3 - Reversal Sell</h3>
+                <p class="text-yellow-100">Resistance reversal zone</p>
+            </div>
+            <div class="p-6 space-y-4">
+                <div class="flex items-center justify-between p-4 bg-yellow-50 rounded-lg">
+                    <span class="font-semibold text-gray-700">Entry Level</span>
+                    <span class="text-2xl font-bold text-yellow-700">{{ level.h3_level }}</span>
+                </div>
+                <div class="flex items-center justify-between p-4 bg-red-50 rounded-lg">
+                    <span class="font-semibold text-gray-700">Stop Loss</span>
+                    <span class="text-2xl font-bold text-red-700">{{ level.h3_sl }}</span>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                        <span class="text-sm font-semibold text-gray-700">Target 1 🎯</span>
+                        <span class="text-lg font-bold text-green-700">{{ level.h3_target1 }}</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-green-100 rounded-lg border-l-4 border-green-600">
+                        <span class="text-sm font-semibold text-gray-700">Target 2 🎯🎯</span>
+                        <span class="text-lg font-bold text-green-800">{{ level.h3_target2 }}</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-green-200 rounded-lg border-l-4 border-green-700">
+                        <span class="text-sm font-semibold text-gray-700">Target 3 🎯🎯🎯</span>
+                        <span class="text-lg font-bold text-green-900">{{ level.h3_target3 }}</span>
+                    </div>
+                </div>
+                <div class="pt-4 border-t">
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <span class="text-gray-600">Risk:</span>
+                            <span class="font-bold text-red-600">{{ level.h3_sl|add:"-"|add:level.h3_level|floatformat:2 }}</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-600">Reward (T1):</span>
+                            <span class="font-bold text-green-600">{{ level.h3_level|add:"-"|add:level.h3_target1|floatformat:2 }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- L3 - Reversal Buy -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-6 text-white">
+                <h3 class="text-2xl font-bold mb-2">L3 - Reversal Buy</h3>
+                <p class="text-blue-100">Support reversal zone</p>
+            </div>
+            <div class="p-6 space-y-4">
+                <div class="flex items-center justify-between p-4 bg-blue-50 rounded-lg">
+                    <span class="font-semibold text-gray-700">Entry Level</span>
+                    <span class="text-2xl font-bold text-blue-700">{{ level.l3_level }}</span>
+                </div>
+                <div class="flex items-center justify-between p-4 bg-red-50 rounded-lg">
+                    <span class="font-semibold text-gray-700">Stop Loss</span>
+                    <span class="text-2xl font-bold text-red-700">{{ level.l3_sl }}</span>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                        <span class="text-sm font-semibold text-gray-700">Target 1 🎯</span>
+                        <span class="text-lg font-bold text-green-700">{{ level.l3_target1 }}</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-green-100 rounded-lg border-l-4 border-green-600">
+                        <span class="text-sm font-semibold text-gray-700">Target 2 🎯🎯</span>
+                        <span class="text-lg font-bold text-green-800">{{ level.l3_target2 }}</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-green-200 rounded-lg border-l-4 border-green-700">
+                        <span class="text-sm font-semibold text-gray-700">Target 3 🎯🎯🎯</span>
+                        <span class="text-lg font-bold text-green-900">{{ level.l3_target3 }}</span>
+                    </div>
+                </div>
+                <div class="pt-4 border-t">
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <span class="text-gray-600">Risk:</span>
+                            <span class="font-bold text-red-600">{{ level.l3_level|add:"-"|add:level.l3_sl|floatformat:2 }}</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-600">Reward (T1):</span>
+                            <span class="font-bold text-green-600">{{ level.l3_target1|add:"-"|add:level.l3_level|floatformat:2 }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- L4 - Short Breakout -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-red-500 to-red-600 p-6 text-white">
+                <h3 class="text-2xl font-bold mb-2">L4 - Short Breakout</h3>
+                <p class="text-red-100">Strong bearish breakout level</p>
+            </div>
+            <div class="p-6 space-y-4">
+                <div class="flex items-center justify-between p-4 bg-red-50 rounded-lg">
+                    <span class="font-semibold text-gray-700">Entry Level</span>
+                    <span class="text-2xl font-bold text-red-700">{{ level.l4_level }}</span>
+                </div>
+                <div class="flex items-center justify-between p-4 bg-red-50 rounded-lg">
+                    <span class="font-semibold text-gray-700">Stop Loss</span>
+                    <span class="text-2xl font-bold text-red-700">{{ level.l4_sl }}</span>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                        <span class="text-sm font-semibold text-gray-700">Target 1 🎯</span>
+                        <span class="text-lg font-bold text-green-700">{{ level.l4_target1 }}</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-green-100 rounded-lg border-l-4 border-green-600">
+                        <span class="text-sm font-semibold text-gray-700">Target 2 🎯🎯</span>
+                        <span class="text-lg font-bold text-green-800">{{ level.l4_target2 }}</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-green-200 rounded-lg border-l-4 border-green-700">
+                        <span class="text-sm font-semibold text-gray-700">Target 3 🎯🎯🎯</span>
+                        <span class="text-lg font-bold text-green-900">{{ level.l4_target3 }}</span>
+                    </div>
+                </div>
+                <div class="pt-4 border-t">
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <span class="text-gray-600">Risk:</span>
+                            <span class="font-bold text-red-600">{{ level.l4_sl|add:"-"|add:level.l4_level|floatformat:2 }}</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-600">Reward (T1):</span>
+                            <span class="font-bold text-green-600">{{ level.l4_level|add:"-"|add:level.l4_target1|floatformat:2 }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Historical Performance -->
+    <div class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Recent History</h2>
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                <tr>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Date</th>
+                    <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase">H4</th>
+                    <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase">H3</th>
+                    <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase">L3</th>
+                    <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase">L4</th>
+                </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                {% for hist in historical %}
+                <tr class="hover:bg-gray-50">
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                        {{ hist.trade_date|date:"d M Y" }}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-700">{{ hist.h4_level }}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-700">{{ hist.h3_level }}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-700">{{ hist.l3_level }}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-700">{{ hist.l4_level }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

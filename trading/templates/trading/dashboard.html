@@ -1,0 +1,133 @@
+<!-- templates/trading/dashboard.html -->
+{% extends 'trading/base.html' %}
+{% load static %}
+
+{% block title %}TradeShelf - Advanced Trading Analysis{% endblock %}
+
+{% block content %}
+<div class="fade-in">
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 rounded-2xl shadow-2xl p-12 mb-12 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-6">Welcome to TradeShelf</h1>
+            <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                Advanced trading analysis platform for Indian markets. Get real-time Camarilla levels, 
+                whole number analysis, and comprehensive trading insights.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="{% url 'trading:camarilla_levels' %}" 
+                   class="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-all duration-300 transform hover:scale-105">
+                    View Camarilla Levels
+                </a>
+                <a href="#features" 
+                   class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-900 transition-all duration-300">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="mb-16">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Platform Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Camarilla Levels</h3>
+                <p class="text-gray-600">Advanced pivot points that identify key support and resistance zones for intraday trading.</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Whole Number Analysis</h3>
+                <p class="text-gray-600">Detect stocks trading at psychological whole number levels for better entry and exit points.</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Real-time Analytics</h3>
+                <p class="text-gray-600">Comprehensive analytics and historical performance tracking for informed decision making.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Documentation Section -->
+    <div class="bg-gray-50 rounded-2xl p-12 mb-12">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">TradeShelf Documentation</h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">What are Camarilla Levels?</h3>
+                    <p class="text-gray-600 mb-4">
+                        Camarilla levels are advanced pivot points derived from the previous day's trading range. 
+                        They help identify key intraday support and resistance levels.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• <strong>H3/H4:</strong> Resistance levels for selling opportunities</li>
+                        <li>• <strong>L3/L4:</strong> Support levels for buying opportunities</li>
+                        <li>• <strong>Breakouts:</strong> H4 and L4 indicate strong breakout levels</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Trading Strategy</h3>
+                    <p class="text-gray-600">
+                        Use Camarilla levels to identify potential reversal points and breakout opportunities. 
+                        Combine with other technical indicators for confirmation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Whole Number Theory</h3>
+                    <p class="text-gray-600 mb-4">
+                        Psychological whole numbers (like 100, 150, 200) often act as strong support and resistance levels 
+                        due to human psychology and round number bias.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Identify stocks near whole number highs/lows</li>
+                        <li>• Use for entry and exit positioning</li>
+                        <li>• Combine with volume analysis for confirmation</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Risk Management</h3>
+                    <p class="text-gray-600">
+                        Always use proper position sizing and stop losses. The platform provides calculated 
+                        stop loss and target levels for each trading setup.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Features (Visible only to admins) -->
+    {% if user.is_staff or user.is_superuser %}
+    <div class="bg-gradient-to-r from-teal-500 to-teal-600 rounded-2xl p-8 text-white">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold mb-4">Admin Console</h2>
+            <p class="text-teal-100 mb-6">Access advanced features and system management tools</p>
+            <a href="{% url 'trading:admin_dashboard' %}" 
+               class="bg-white text-teal-600 px-8 py-3 rounded-lg font-bold hover:bg-teal-50 transition-colors">
+                Go to Admin Dashboard
+            </a>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

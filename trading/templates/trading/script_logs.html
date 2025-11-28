@@ -1,0 +1,243 @@
+{% extends 'trading/base.html' %}
+{% load static %}
+
+{% block title %}Script Logs - TradeShelf{% endblock %}
+
+{% block content %}
+<div class="fade-in">
+    <!-- Header with Filters -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-800 mb-2">Script Execution Logs</h1>
+                <p class="text-gray-600">Monitor and track automated script runs</p>
+            </div>
+            
+            <!-- Filter Form -->
+            <form method="GET" class="mt-4 md:mt-0">
+                <div class="flex items-center space-x-3">
+                    <label class="text-sm font-medium text-gray-700">Filter:</label>
+                    <select name="script" onchange="this.form.submit()" 
+                            class="border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500">
+                        <option value="ALL" {% if script_type == 'ALL' %}selected{% endif %}>All Scripts</option>
+                        <option value="CAMARILLA" {% if script_type == 'CAMARILLA' %}selected{% endif %}>Camarilla</option>
+                        <option value="WHOLE_NUMBER" {% if script_type == 'WHOLE_NUMBER' %}selected{% endif %}>Whole Number</option>
+                    </select>
+                    <button type="button" onclick="location.reload()" 
+                            class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
+                        Refresh
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Statistics Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+        <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
+            <div class="text-sm font-medium text-gray-600 mb-1">Total Runs</div>
+            <div class="text-3xl font-bold text-gray-900">{{ stats.total_runs }}</div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
+            <div class="text-sm font-medium text-gray-600 mb-1">Success Rate</div>
+            <div class="text-3xl font-bold text-green-600">{{ stats.success_rate|floatformat:1 }}%</div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-orange-500">
+            <div class="text-sm font-medium text-gray-600 mb-1">Avg Duration</div>
+            <div class="text-3xl font-bold text-orange-600">{{ stats.avg_duration }}s</div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-500">
+            <div class="text-sm font-medium text-gray-600 mb-1">Last 24h</div>
+            <div class="text-3xl font-bold text-purple-600">{{ logs|slice:":24"|length }}</div>
+        </div>
+    </div>
+
+    <!-- Logs Table -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="px-6 py-4 bg-gray-50 border-b">
+            <h2 class="text-xl font-bold text-gray-800">Recent Executions</h2>
+        </div>
+        
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Script
+                        </th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Date & Time
+                        </th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Status
+                        </th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Records
+                        </th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Duration
+                        </th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Details
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    {% for log in logs %}
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="px-3 py-1 text-xs font-semibold rounded-full
+                                {% if log.script_name == 'CAMARILLA' %}
+                                    bg-teal-100 text-teal-800
+                                {% else %}
+                                    bg-purple-100 text-purple-800
+                                {% endif %}">
+                                {{ log.get_script_name_display }}
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="text-sm font-medium text-gray-900">
+                                {{ log.start_time|date:"M d, Y" }}
+                            </div>
+                            <div class="text-xs text-gray-500">
+                                {{ log.start_time|time:"H:i:s" }} IST
+                            </div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center">
+                            <span class="px-3 py-1 text-xs font-semibold rounded-full
+                                {% if log.status == 'SUCCESS' %}
+                                    bg-green-100 text-green-800
+                                {% elif log.status == 'FAILED' %}
+                                    bg-red-100 text-red-800
+                                {% elif log.status == 'RUNNING' %}
+                                    bg-yellow-100 text-yellow-800 animate-pulse
+                                {% else %}
+                                    bg-gray-100 text-gray-800
+                                {% endif %}">
+                                {{ log.status }}
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center">
+                            <div class="text-sm">
+                                <span class="font-bold text-green-600">{{ log.records_success }}</span>
+                                <span class="text-gray-500">/</span>
+                                <span class="text-gray-700">{{ log.records_processed }}</span>
+                            </div>
+                            {% if log.records_failed > 0 %}
+                            <div class="text-xs text-red-600">
+                                {{ log.records_failed }} failed
+                            </div>
+                            {% endif %}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-700">
+                            {% if log.duration_seconds %}
+                                {% if log.duration_seconds >= 60 %}
+                                    {{ log.duration_seconds|floatformat:0|add:"60"|divisibleby:"60" }}m 
+                                    {{ log.duration_seconds|add:"-60"|floatformat:0 }}s
+                                {% else %}
+                                    {{ log.duration_seconds }}s
+                                {% endif %}
+                            {% else %}
+                                <span class="text-gray-400">-</span>
+                            {% endif %}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center">
+                            <button onclick="showLogDetails({{ log.id }}, '{{ log.get_script_name_display }}', '{{ log.start_time|date:"M d, Y H:i" }}', '{{ log.status }}', '{{ log.error_message|escapejs }}')" 
+                                    class="text-blue-600 hover:text-blue-900 font-medium">
+                                <svg class="w-5 h-5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="6" class="px-6 py-12 text-center">
+                            <div class="flex flex-col items-center">
+                                <svg class="w-16 h-16 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+                                <p class="text-gray-500 text-lg">No logs available</p>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Log Details Modal -->
+<div id="logModal" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
+    <div class="relative top-20 mx-auto p-5 border w-11/12 md:w-3/4 lg:w-1/2 shadow-lg rounded-lg bg-white">
+        <div class="flex items-center justify-between mb-4">
+            <h3 class="text-xl font-bold text-gray-900" id="modalTitle"></h3>
+            <button onclick="closeLogModal()" class="text-gray-400 hover:text-gray-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div id="modalContent" class="mt-4"></div>
+    </div>
+</div>
+
+<script>
+function showLogDetails(id, scriptName, startTime, status, errorMsg) {
+    document.getElementById('modalTitle').textContent = `${scriptName} - Log Details`;
+    
+    let content = `
+        <div class="space-y-4">
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <div class="text-sm text-gray-600">Execution Time</div>
+                        <div class="text-lg font-semibold text-gray-900">${startTime}</div>
+                    </div>
+                    <div>
+                        <div class="text-sm text-gray-600">Status</div>
+                        <div class="text-lg font-semibold">${getStatusBadge(status)}</div>
+                    </div>
+                </div>
+            </div>
+    `;
+    
+    if (errorMsg && errorMsg !== 'None') {
+        content += `
+            <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+                <div class="text-sm font-semibold text-red-800 mb-2">Error Message:</div>
+                <div class="text-sm text-red-700 font-mono">${errorMsg}</div>
+            </div>
+        `;
+    }
+    
+    content += `
+            <div class="flex justify-end space-x-3">
+                <button onclick="closeLogModal()" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300">
+                    Close
+                </button>
+            </div>
+        </div>
+    `;
+    
+    document.getElementById('modalContent').innerHTML = content;
+    document.getElementById('logModal').classList.remove('hidden');
+}
+
+function closeLogModal() {
+    document.getElementById('logModal').classList.add('hidden');
+}
+
+function getStatusBadge(status) {
+    const badges = {
+        'SUCCESS': '<span class="px-3 py-1 text-sm font-semibold rounded-full bg-green-100 text-green-800">SUCCESS</span>',
+        'FAILED': '<span class="px-3 py-1 text-sm font-semibold rounded-full bg-red-100 text-red-800">FAILED</span>',
+        'RUNNING': '<span class="px-3 py-1 text-sm font-semibold rounded-full bg-yellow-100 text-yellow-800">RUNNING</span>',
+        'STARTED': '<span class="px-3 py-1 text-sm font-semibold rounded-full bg-blue-100 text-blue-800">STARTED</span>'
+    };
+    return badges[status] || status;
+}
+</script>
+{% endblock %}

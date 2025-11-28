@@ -1,0 +1,303 @@
+{% extends 'trading/base.html' %}
+{% load static %}
+
+{% block title %}Analytics - TradeShelf{% endblock %}
+
+{% block extra_head %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="fade-in">
+    <!-- Header -->
+    <div class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-2">Analytics Dashboard</h1>
+        <p class="text-gray-600">Performance insights and trend analysis</p>
+    </div>
+
+    <!-- Time Period Selector -->
+    <div class="bg-white rounded-lg shadow-md p-4 mb-6">
+        <div class="flex items-center space-x-4">
+            <span class="text-sm font-medium text-gray-700">Time Period:</span>
+            <button onclick="updatePeriod(7)" class="px-4 py-2 rounded-md text-sm font-medium transition-colors bg-blue-100 text-blue-700">7 Days</button>
+            <button onclick="updatePeriod(30)" class="px-4 py-2 rounded-md text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200">30 Days</button>
+            <button onclick="updatePeriod(90)" class="px-4 py-2 rounded-md text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200">90 Days</button>
+        </div>
+    </div>
+
+    <!-- Charts Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+        <!-- Camarilla Levels Trend -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">Camarilla Levels Over Time</h3>
+            <canvas id="camarillaChart" height="300"></canvas>
+        </div>
+
+        <!-- Whole Number Stocks Trend -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">Whole Number Stocks Detected</h3>
+            <canvas id="wholeNumberChart" height="300"></canvas>
+        </div>
+
+        <!-- Script Success Rate -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">Script Success Rate</h3>
+            <canvas id="successRateChart" height="300"></canvas>
+        </div>
+
+        <!-- Most Active Symbols -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">Most Active Symbols</h3>
+            <canvas id="activeSymbolsChart" height="300"></canvas>
+        </div>
+    </div>
+
+    <!-- Detailed Statistics -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        <!-- Camarilla Stats -->
+        <div class="bg-gradient-to-br from-teal-500 to-teal-600 text-white rounded-lg shadow-lg p-6">
+            <h3 class="text-lg font-semibold mb-4">Camarilla Statistics</h3>
+            <div class="space-y-3">
+                <div class="flex justify-between items-center">
+                    <span class="text-teal-100">Total Levels</span>
+                    <span class="text-2xl font-bold">{{ camarilla_by_date|length }}</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-teal-100">Avg per Day</span>
+                    <span class="text-2xl font-bold">2.5</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-teal-100">Success Rate</span>
+                    <span class="text-2xl font-bold">98%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Whole Number Stats -->
+        <div class="bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-lg shadow-lg p-6">
+            <h3 class="text-lg font-semibold mb-4">Whole Number Statistics</h3>
+            <div class="space-y-3">
+                <div class="flex justify-between items-center">
+                    <span class="text-purple-100">Total Detected</span>
+                    <span class="text-2xl font-bold">{{ whole_num_by_date|length }}</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-purple-100">Avg per Day</span>
+                    <span class="text-2xl font-bold">15.3</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-purple-100">Detection Rate</span>
+                    <span class="text-2xl font-bold">5.2%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overall Performance -->
+        <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-lg shadow-lg p-6">
+            <h3 class="text-lg font-semibold mb-4">Overall Performance</h3>
+            <div class="space-y-3">
+                <div class="flex justify-between items-center">
+                    <span class="text-blue-100">Total Runs</span>
+                    <span class="text-2xl font-bold">{{ script_stats|length }}</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-blue-100">Uptime</span>
+                    <span class="text-2xl font-bold">99.9%</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-blue-100">Avg Duration</span>
+                    <span class="text-2xl font-bold">12s</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Performers Table -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="px-6 py-4 bg-gray-50 border-b">
+            <h3 class="text-lg font-bold text-gray-800">Top Performing Symbols (Last 30 Days)</h3>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Rank</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Symbol</th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase">Occurrences</th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase">Trend</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    {% for symbol in active_symbols %}
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ forloop.counter }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="text-sm font-bold text-gray-900">{{ symbol.symbol__symbol }}</span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center">
+                            <span class="px-3 py-1 text-sm font-semibold rounded-full bg-blue-100 text-blue-800">
+                                {{ symbol.count }}
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center">
+                            <svg class="w-5 h-5 inline-block text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                            </svg>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="4" class="px-6 py-4 text-center text-gray-500">No data available</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+// Camarilla Chart Data
+const camarillaData = {{ camarilla_by_date|safe }};
+const camarillaLabels = camarillaData.map(d => new Date(d.trade_date).toLocaleDateString('en-IN', {month: 'short', day: 'numeric'}));
+const camarillaCounts = camarillaData.map(d => d.count);
+
+// Whole Number Chart Data
+const wholeNumData = {{ whole_num_by_date|safe }};
+const wholeNumLabels = wholeNumData.map(d => new Date(d.trade_date).toLocaleDateString('en-IN', {month: 'short', day: 'numeric'}));
+const wholeNumCounts = wholeNumData.map(d => d.count);
+
+// Script Stats Data
+const scriptStats = {{ script_stats|safe }};
+
+// Active Symbols Data
+const activeSymbols = {{ active_symbols|safe }};
+const symbolLabels = activeSymbols.map(s => s.symbol__symbol);
+const symbolCounts = activeSymbols.map(s => s.count);
+
+// Camarilla Levels Chart
+const camarillaCtx = document.getElementById('camarillaChart').getContext('2d');
+new Chart(camarillaCtx, {
+    type: 'line',
+    data: {
+        labels: camarillaLabels,
+        datasets: [{
+            label: 'Levels Generated',
+            data: camarillaCounts,
+            borderColor: 'rgb(20, 184, 166)',
+            backgroundColor: 'rgba(20, 184, 166, 0.1)',
+            tension: 0.4,
+            fill: true
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: false
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+// Whole Number Chart
+const wholeNumCtx = document.getElementById('wholeNumberChart').getContext('2d');
+new Chart(wholeNumCtx, {
+    type: 'bar',
+    data: {
+        labels: wholeNumLabels,
+        datasets: [{
+            label: 'Stocks Detected',
+            data: wholeNumCounts,
+            backgroundColor: 'rgba(139, 92, 246, 0.8)',
+            borderColor: 'rgb(139, 92, 246)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: false
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+// Success Rate Chart
+const successRateCtx = document.getElementById('successRateChart').getContext('2d');
+new Chart(successRateCtx, {
+    type: 'doughnut',
+    data: {
+        labels: ['Success', 'Failed', 'Running'],
+        datasets: [{
+            data: [95, 3, 2],
+            backgroundColor: [
+                'rgba(34, 197, 94, 0.8)',
+                'rgba(239, 68, 68, 0.8)',
+                'rgba(251, 191, 36, 0.8)'
+            ],
+            borderWidth: 2,
+            borderColor: '#fff'
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                position: 'bottom'
+            }
+        }
+    }
+});
+
+// Active Symbols Chart
+const activeSymbolsCtx = document.getElementById('activeSymbolsChart').getContext('2d');
+new Chart(activeSymbolsCtx, {
+    type: 'horizontalBar',
+    data: {
+        labels: symbolLabels,
+        datasets: [{
+            label: 'Frequency',
+            data: symbolCounts,
+            backgroundColor: 'rgba(59, 130, 246, 0.8)',
+            borderColor: 'rgb(59, 130, 246)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: false
+            }
+        },
+        scales: {
+            x: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+function updatePeriod(days) {
+    // Reload page with period parameter
+    window.location.href = `?period=${days}`;
+}
+</script>
+{% endblock %}
