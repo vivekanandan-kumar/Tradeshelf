@@ -1,0 +1,135 @@
+<!-- templates/trading/camarilla_list.html -->
+{% extends 'trading/base.html' %}
+{% load static %}
+
+{% block title %}Camarilla Levels - TradeShelf{% endblock %}
+
+{% block content %}
+<div class="fade-in">
+    <!-- Header with Filters -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-800 mb-2">Camarilla Levels</h1>
+                <p class="text-gray-600">Daily trading levels and pivot points</p>
+            </div>
+
+            <!-- Filter Form -->
+            <form method="GET" class="mt-4 md:mt-0">
+                <div class="flex flex-col md:flex-row items-start md:items-center space-y-3 md:space-y-0 md:space-x-3">
+                    <select name="symbol" class="border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500 w-full md:w-auto">
+                        <option value="">All Symbols</option>
+                        {% for symbol in symbols %}
+                        <option value="{{ symbol.symbol }}" {% if symbol_filter == symbol.symbol %}selected{% endif %}>
+                            {{ symbol.symbol }}
+                        </option>
+                        {% endfor %}
+                    </select>
+
+                    <select name="expiry" class="border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500 w-full md:w-auto">
+                        <option value="">All Expiries</option>
+                        {% for expiry in expiries %}
+                        <option value="{{ expiry.expiry_date }}" {% if expiry_filter == expiry.expiry_date|date:"Y-m-d" %}selected{% endif %}>
+                            {{ expiry.expiry_date|date:"d M Y" }}
+                        </option>
+                        {% endfor %}
+                    </select>
+
+                    <input type="date" name="date" value="{{ date_filter }}"
+                           class="border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500 w-full md:w-auto">
+
+                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 w-full md:w-auto">
+                        Filter
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Levels Table -->
+    {% if camarilla_levels %}
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Symbol</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Date</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Expiry Date</th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase">H4</th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase">H3</th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase">L3</th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase">L4</th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    {% for level in camarilla_levels %}
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 h-10 w-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-bold text-sm">{{ level.symbol.symbol|slice:":2"|upper }}</span>
+                                </div>
+                                <div class="ml-4">
+                                    <div class="text-sm font-bold text-gray-900">{{ level.symbol.symbol }}</div>
+                                    <div class="text-xs text-gray-500">{{ level.symbol.instrument_type }}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            {{ level.trade_date|date:"d M Y" }}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            {% if level.expiry_date %}
+                                {{ level.expiry_date.expiry_date|date:"d M Y" }}
+                            {% else %}
+                                -
+                            {% endif %}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center">
+                            <span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
+                                {{ level.h4_level }}
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center">
+                            <span class="px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                                {{ level.h3_level }}
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center">
+                            <span class="px-2 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">
+                                {{ level.l3_level }}
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center">
+                            <span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800">
+                                {{ level.l4_level }}
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center text-sm font-medium">
+                            <a href="{% url 'trading:camarilla_detail' level.pk %}"
+                               class="text-blue-600 hover:text-blue-900">View Details</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {% else %}
+    <div class="bg-white rounded-lg shadow-md p-12 text-center">
+        <div class="max-w-md mx-auto">
+            <svg class="w-24 h-24 mx-auto text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h3 class="text-2xl font-bold text-gray-700 mb-2">No Camarilla Levels Found</h3>
+            <p class="text-gray-500 mb-6">No Camarilla levels were found for the selected filters.</p>
+            <a href="{% url 'trading:camarilla_levels' %}" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700">
+                Clear Filters
+            </a>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

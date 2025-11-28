@@ -1,0 +1,199 @@
+,SYMBOL,DATE,H4,H3,L3,L4,H4_SL,H4_SL_T1,H4_SL_T2,H4_SL_T3,H3_SL,H3_SL_T1,H3_SL_T2,H3_SL_T3,L4_SL,L4_SL_T1,L4_SL_T2,L4_SL_T3,L3_SL,L3_SL_T1,L3_SL_T2,L3_SL_T3,PREV_DATE,MAIL_TEXT_HTML
+NIFTY,NIFTY,2025-11-28,26498.86,26429.88,26351.92,26282.95,26454.37,26621.35,26753.84,26886.34,26474.37,26374.57,26358.25,26341.92,26327.43,26161.53,26030.12,25898.7,26307.43,26407.23,26423.55,26439.88,27-Nov-2025,"
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <style>
+                .trading-table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    font-family: 'Arial', sans-serif;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                    border-radius: 12px;
+                    overflow: hidden;
+                    margin: 0 auto;
+                }
+                .trading-table th {
+                    padding: 16px 8px;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 14px;
+                    color: white;
+                    border: none;
+                }
+                .trading-table td {
+                    padding: 14px 8px;
+                    text-align: center;
+                    border: none;
+                    font-weight: 500;
+                }
+                .header-row {
+                    background: linear-gradient(135deg, #2c3e50, #34495e);
+                }
+                /* Column gradient backgrounds matching headers */
+                .h4-column {
+                    background: linear-gradient(135deg, #e8f8f5, #d1f2eb, #a3e4d7);
+                    border-left: 4px solid #16a085;
+                }
+                .h3-column {
+                    background: linear-gradient(135deg, #fef9e7, #fcf3cf, #f7dc6f);
+                    border-left: 4px solid #f39c12;
+                }
+                .l3-column {
+                    background: linear-gradient(135deg, #eaf2f8, #d4e6f1, #aed6f1);
+                    border-left: 4px solid #2980b9;
+                }
+                .l4-column {
+                    background: linear-gradient(135deg, #f9ebea, #f2d7d5, #e6b0aa);
+                    border-left: 4px solid #c0392b;
+                }
+                /* Level headers with stronger gradients */
+                .level-header.h4 {
+                    background: linear-gradient(135deg, #16a085, #1abc9c, #48c9b0) !important;
+                }
+                .level-header.h3 {
+                    background: linear-gradient(135deg, #f39c12, #f1c40f, #f7dc6f) !important;
+                }
+                .level-header.l3 {
+                    background: linear-gradient(135deg, #2980b9, #3498db, #5dade2) !important;
+                }
+                .level-header.l4 {
+                    background: linear-gradient(135deg, #c0392b, #e74c3c, #ec7063) !important;
+                }
+                .level-header {
+                    color: white !important;
+                    font-size: 15px !important;
+                    padding: 20px 8px !important;
+                    border-bottom: 2px solid rgba(255,255,255,0.3);
+                }
+                .value-cell {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #2c3e50;
+                    padding: 18px 8px;
+                }
+                /* Psychological color coding */
+                .sl-cell {
+                    background: linear-gradient(135deg, #e74c3c, #c0392b, #a93226) !important;
+                    color: white !important;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+                .target-cell-1 {
+                    background: linear-gradient(135deg, #27ae60, #2ecc71, #58d68d) !important;
+                    color: white !important;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+                .target-cell-2 {
+                    background: linear-gradient(135deg, #229954, #27ae60, #52be80) !important;
+                    color: white !important;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+                .target-cell-3 {
+                    background: linear-gradient(135deg, #1e8449, #229954, #45b39d) !important;
+                    color: white !important;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+                .section-header {
+                    background: linear-gradient(135deg, #495057, #343a40, #212529) !important;
+                    color: white !important;
+                    font-size: 15px;
+                    font-weight: bold;
+                    padding: 16px 8px;
+                    text-align: left;
+                    padding-left: 20px !important;
+                }
+                .symbol-header {
+                    background: linear-gradient(135deg, #1a5276, #1b4f72, #154360);
+                    color: white;
+                    font-size: 22px;
+                    padding: 24px 8px;
+                    text-align: center;
+                    border-bottom: 3px solid rgba(255,255,255,0.2);
+                }
+                .footer {
+                    background: linear-gradient(135deg, #2c3e50, #34495e, #1c2833);
+                    color: white;
+                    padding: 18px 8px;
+                    text-align: center;
+                    font-size: 13px;
+                    border-top: 3px solid rgba(255,255,255,0.1);
+                }
+                /* Row hover effects */
+                tr:hover td {
+                    filter: brightness(1.05);
+                    transition: all 0.2s ease;
+                }
+            </style>
+        </head>
+        <body>
+            <table class=""trading-table"">
+                <!-- Symbol Header -->
+                <tr>
+                    <td colspan=""5"" class=""symbol-header"">
+                        <strong>NIFTY - FUTIDX</strong><br>
+                        <small style=""font-size: 16px; opacity: 0.9;"">Trading Levels for Friday, November 28, 2025</small>
+                    </td>
+                </tr>
+
+                <!-- Strategy Headers -->
+                <tr>
+                    <th> </th>
+                    <th class=""level-header h4"">LONG BREAKOUT<br><span style=""font-size:12px; opacity: 0.9;"">(H4 - Bullish)</span></th>
+                    <th class=""level-header h3"">REVERSAL SELL<br><span style=""font-size:12px; opacity: 0.9;"">(H3 - Resistance)</span></th>
+                    <th class=""level-header l3"">REVERSAL BUY<br><span style=""font-size:12px; opacity: 0.9;"">(L3 - Support)</span></th>
+                    <th class=""level-header l4"">SHORT BREAKOUT<br><span style=""font-size:12px; opacity: 0.9;"">(L4 - Bearish)</span></th>
+                </tr>
+
+                <!-- Levels Row -->
+                <tr>
+                    <td> 30-Dec2025 </td>
+                    <td class=""h4-column value-cell"">26498.86</td>
+                    <td class=""h3-column value-cell"">26429.88</td>
+                    <td class=""l3-column value-cell"">26351.92</td>
+                    <td class=""l4-column value-cell"">26282.95</td>
+                </tr>
+
+                <!-- Target 1 Row -->
+                <tr>
+                    <td class=""section-header"">TARGET 1 🎯 </td>
+                    <td class=""h4-column target-cell-1"">26621.35</td>
+                    <td class=""h3-column target-cell-1"">26374.57</td>
+                    <td class=""l3-column target-cell-1"">26407.23</td>
+                    <td class=""l4-column target-cell-1"">26161.53</td>
+                </tr>
+
+                <!-- Stop Loss Row -->
+                <tr>
+                    <td class=""section-header"">STOP LOSS LEVELS 🛑 </td>
+                    <td class=""h4-column sl-cell"">26454.37</td>
+                    <td class=""h3-column sl-cell"">26474.37</td>
+                    <td class=""l3-column sl-cell"">26307.43</td>
+                    <td class=""l4-column sl-cell"">26327.43</td>
+                </tr>
+
+                <!-- Target 2 Row -->
+                <tr>
+                    <td class=""section-header"">TARGET 2 🎯🎯 </td>
+                    <td class=""h4-column target-cell-2"">26753.84</td>
+                    <td class=""h3-column target-cell-2"">26358.25</td>
+                    <td class=""l3-column target-cell-2"">26423.55</td>
+                    <td class=""l4-column target-cell-2"">26030.12</td>
+                </tr>
+
+                <!-- Target 3 Row -->
+                <tr>
+                    <td class=""section-header"">TARGET 3 🎯🎯🎯 </td>
+                    <td class=""h4-column target-cell-3"">26886.34</td>
+                    <td class=""h3-column target-cell-3"">26341.92</td>
+                    <td class=""l3-column target-cell-3"">26439.88</td>
+                    <td class=""l4-column target-cell-3"">25898.7</td>
+                </tr>
+
+            </table>
+        </body>
+        </html>
+        "
