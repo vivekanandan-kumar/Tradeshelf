@@ -14,7 +14,7 @@ from email.mime.base import MIMEBase
 from email import encoders
 import pytz
 
-cwd = '/Users/vivekanandan/PycharmProjects/DjangoProject/Tradeshelf/scripts/Camrilla_2025'
+cwd = '/home/vivek/Documents/Trading/Tradeshelf/scripts/Camrilla_2025'
 
 
 def mail_send(symbol, ins_type, text_html):

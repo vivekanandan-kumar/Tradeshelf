@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'your-secret-key-here'  # Generate a secure key
 DEBUG = True
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -57,24 +57,24 @@ TEMPLATES = [
 # Database - Choose one:
 
 # Option 1: SQLite (for development)
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
 
 # Option 2: PostgreSQL (recommended for production)
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'trading_db',
-#         'USER': 'your_user',
-#         'PASSWORD': 'your_password',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
+DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.postgresql',
+         'NAME': 'trading_db',
+         'USER': 'p_root',
+         'PASSWORD': 'password',
+         'HOST': 'localhost',
+         'PORT': '5432',
+     }
+ }
 
 # Option 3: MySQL
 
@@ -85,8 +85,8 @@ DATABASES = {
 #        'NAME': 'trading_db',
 #        'USER': 'p_root',
 #        'PASSWORD': 'password',
-#        #'HOST': 'localhost', # in fedora
-#        'HOST': '192.168.1.13', #mac os
+#        'HOST': 'localhost', # in fedora
+#        #'HOST': '192.168.1.13', #mac os
 #        'PORT': '3306',
 #        'ATOMIC_REQUESTS': True,
 #        'OPTIONS': {

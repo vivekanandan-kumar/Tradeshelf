@@ -1,5 +1,5 @@
 ,SYMBOL,DATE,H4,H3,L3,L4,H4_SL,H4_SL_T1,H4_SL_T2,H4_SL_T3,H3_SL,H3_SL_T1,H3_SL_T2,H3_SL_T3,L4_SL,L4_SL_T1,L4_SL_T2,L4_SL_T3,L3_SL,L3_SL_T1,L3_SL_T2,L3_SL_T3,PREV_DATE,MAIL_TEXT_HTML
-NIFTY,NIFTY,2025-11-28,26498.86,26429.88,26351.92,26282.95,26454.37,26621.35,26753.84,26886.34,26474.37,26374.57,26358.25,26341.92,26327.43,26161.53,26030.12,25898.7,26307.43,26407.23,26423.55,26439.88,27-Nov-2025,"
+NIFTY,NIFTY,2025-11-30,26465.38,26411.39,26363.41,26309.42,26428.38,26587.71,26720.03,26852.36,26448.38,26376.07,26364.74,26353.41,26346.42,26187.87,26056.33,25924.78,26326.42,26398.73,26410.06,26421.39,28-Nov-2025,"
         <!DOCTYPE html>
         <html>
         <head>
@@ -135,7 +135,7 @@ NIFTY,NIFTY,2025-11-28,26498.86,26429.88,26351.92,26282.95,26454.37,26621.35,267
                 <tr>
                     <td colspan=""5"" class=""symbol-header"">
                         <strong>NIFTY - FUTIDX</strong><br>
-                        <small style=""font-size: 16px; opacity: 0.9;"">Trading Levels for Friday, November 28, 2025</small>
+                        <small style=""font-size: 16px; opacity: 0.9;"">Trading Levels for Sunday, November 30, 2025</small>
                     </td>
                 </tr>
 
@@ -151,46 +151,46 @@ NIFTY,NIFTY,2025-11-28,26498.86,26429.88,26351.92,26282.95,26454.37,26621.35,267
                 <!-- Levels Row -->
                 <tr>
                     <td> 30-Dec2025 </td>
-                    <td class=""h4-column value-cell"">26498.86</td>
-                    <td class=""h3-column value-cell"">26429.88</td>
-                    <td class=""l3-column value-cell"">26351.92</td>
-                    <td class=""l4-column value-cell"">26282.95</td>
+                    <td class=""h4-column value-cell"">26465.38</td>
+                    <td class=""h3-column value-cell"">26411.39</td>
+                    <td class=""l3-column value-cell"">26363.41</td>
+                    <td class=""l4-column value-cell"">26309.42</td>
                 </tr>
 
                 <!-- Target 1 Row -->
                 <tr>
                     <td class=""section-header"">TARGET 1 🎯 </td>
-                    <td class=""h4-column target-cell-1"">26621.35</td>
-                    <td class=""h3-column target-cell-1"">26374.57</td>
-                    <td class=""l3-column target-cell-1"">26407.23</td>
-                    <td class=""l4-column target-cell-1"">26161.53</td>
+                    <td class=""h4-column target-cell-1"">26587.71</td>
+                    <td class=""h3-column target-cell-1"">26376.07</td>
+                    <td class=""l3-column target-cell-1"">26398.73</td>
+                    <td class=""l4-column target-cell-1"">26187.87</td>
                 </tr>
 
                 <!-- Stop Loss Row -->
                 <tr>
                     <td class=""section-header"">STOP LOSS LEVELS 🛑 </td>
-                    <td class=""h4-column sl-cell"">26454.37</td>
-                    <td class=""h3-column sl-cell"">26474.37</td>
-                    <td class=""l3-column sl-cell"">26307.43</td>
-                    <td class=""l4-column sl-cell"">26327.43</td>
+                    <td class=""h4-column sl-cell"">26428.38</td>
+                    <td class=""h3-column sl-cell"">26448.38</td>
+                    <td class=""l3-column sl-cell"">26326.42</td>
+                    <td class=""l4-column sl-cell"">26346.42</td>
                 </tr>
 
                 <!-- Target 2 Row -->
                 <tr>
                     <td class=""section-header"">TARGET 2 🎯🎯 </td>
-                    <td class=""h4-column target-cell-2"">26753.84</td>
-                    <td class=""h3-column target-cell-2"">26358.25</td>
-                    <td class=""l3-column target-cell-2"">26423.55</td>
-                    <td class=""l4-column target-cell-2"">26030.12</td>
+                    <td class=""h4-column target-cell-2"">26720.03</td>
+                    <td class=""h3-column target-cell-2"">26364.74</td>
+                    <td class=""l3-column target-cell-2"">26410.06</td>
+                    <td class=""l4-column target-cell-2"">26056.33</td>
                 </tr>
 
                 <!-- Target 3 Row -->
                 <tr>
                     <td class=""section-header"">TARGET 3 🎯🎯🎯 </td>
-                    <td class=""h4-column target-cell-3"">26886.34</td>
-                    <td class=""h3-column target-cell-3"">26341.92</td>
-                    <td class=""l3-column target-cell-3"">26439.88</td>
-                    <td class=""l4-column target-cell-3"">25898.7</td>
+                    <td class=""h4-column target-cell-3"">26852.36</td>
+                    <td class=""h3-column target-cell-3"">26353.41</td>
+                    <td class=""l3-column target-cell-3"">26421.39</td>
+                    <td class=""l4-column target-cell-3"">25924.78</td>
                 </tr>
 
             </table>

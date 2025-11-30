@@ -9,7 +9,7 @@ from datetime import date, datetime
 import importlib.util
 
 # Add the path to your existing script
-SCRIPT_PATH = '/Users/vivekanandan/PycharmProjects/DjangoProject/Tradeshelf/scripts/Whole_Number/st_whole_num_v2.py'
+SCRIPT_PATH = '/home/vivek/Documents/Trading/Tradeshelf/scripts/Whole_Number/st_whole_num_v2.py'
 
 
 class Command(BaseCommand):

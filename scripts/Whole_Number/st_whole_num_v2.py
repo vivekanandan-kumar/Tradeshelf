@@ -20,7 +20,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import logging
 
 # Configuration
-CWD = '/Users/vivekanandan/PycharmProjects/DjangoProject/Tradeshelf/scripts/Whole_Number'
+CWD = '/home/vivek/Documents/Trading/Tradeshelf/scripts/Whole_Number'
 OUTPUT_DIR = os.path.join(CWD, 'output')
 HIST_DATA_DIR = os.path.join(OUTPUT_DIR, 'hist_data')
 

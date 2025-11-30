@@ -5051,3 +5051,606 @@
 2025-11-28 08:55:42,475 - WARNING - No data found for SBICARD
 2025-11-28 08:55:42,913 - ERROR - EICHERMOT.NS: No price data found, symbol may be delisted (period=3d)
 2025-11-28 08:55:42,915 - WARNING - No data found for EICHERMOT
+2025-11-28 09:44:23,973 - ERROR - Failed to get ticker 'BLUESTARCO.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:23,990 - ERROR - Failed to get ticker 'NHPC.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:23,993 - ERROR - Failed to get ticker 'POWERGRID.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:23,997 - ERROR - Failed to get ticker 'LUPIN.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:24,006 - ERROR - Failed to get ticker 'JSWSTEEL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:24,009 - ERROR - Failed to get ticker 'MOTILALOFS.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:24,012 - ERROR - Failed to get ticker 'TATACOMM.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:24,014 - ERROR - Failed to get ticker 'BHARTIARTL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:24,025 - ERROR - Failed to get ticker 'SBILIFE.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:24,027 - ERROR - Failed to get ticker 'KPITTECH.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:24,544 - ERROR - NHPC.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:24,556 - WARNING - No data found for NHPC
+2025-11-28 09:44:24,708 - ERROR - MOTILALOFS.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:24,735 - ERROR - POWERGRID.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:24,740 - ERROR - BLUESTARCO.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:24,744 - ERROR - LUPIN.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:24,747 - ERROR - JSWSTEEL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:24,768 - ERROR - KPITTECH.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:24,771 - ERROR - SBILIFE.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:24,774 - ERROR - TATACOMM.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:24,776 - ERROR - BHARTIARTL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:24,783 - WARNING - No data found for MOTILALOFS
+2025-11-28 09:44:24,785 - WARNING - No data found for POWERGRID
+2025-11-28 09:44:24,807 - WARNING - No data found for BHARTIARTL
+2025-11-28 09:44:24,791 - WARNING - No data found for LUPIN
+2025-11-28 09:44:24,790 - WARNING - No data found for BLUESTARCO
+2025-11-28 09:44:24,796 - WARNING - No data found for KPITTECH
+2025-11-28 09:44:24,801 - WARNING - No data found for SBILIFE
+2025-11-28 09:44:24,794 - WARNING - No data found for JSWSTEEL
+2025-11-28 09:44:24,814 - WARNING - No data found for TATACOMM
+2025-11-28 09:44:25,331 - ERROR - Failed to get ticker 'INDHOTEL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:25,700 - ERROR - Failed to get ticker 'DIVISLAB.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:25,745 - ERROR - Failed to get ticker 'NTPCGREEN.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:25,749 - ERROR - Failed to get ticker 'YESBANK.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:25,762 - ERROR - Failed to get ticker 'ENRIN.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:25,768 - ERROR - Failed to get ticker 'BHARATFORG.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:25,774 - ERROR - Failed to get ticker 'COROMANDEL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:25,798 - ERROR - Failed to get ticker 'DRREDDY.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:25,815 - ERROR - Failed to get ticker 'ITCHOTELS.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:26,030 - ERROR - Failed to get ticker 'VOLTAS.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:26,036 - ERROR - INDHOTEL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:26,045 - WARNING - No data found for INDHOTEL
+2025-11-28 09:44:26,503 - ERROR - DIVISLAB.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:26,513 - WARNING - No data found for DIVISLAB
+2025-11-28 09:44:26,604 - ERROR - YESBANK.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:26,611 - WARNING - No data found for YESBANK
+2025-11-28 09:44:26,634 - ERROR - BHARATFORG.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:26,636 - WARNING - No data found for BHARATFORG
+2025-11-28 09:44:26,640 - ERROR - COROMANDEL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:26,645 - WARNING - No data found for COROMANDEL
+2025-11-28 09:44:26,682 - ERROR - VOLTAS.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:26,685 - WARNING - No data found for VOLTAS
+2025-11-28 09:44:26,690 - ERROR - DRREDDY.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:26,693 - WARNING - No data found for DRREDDY
+2025-11-28 09:44:26,773 - ERROR - ITCHOTELS.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:26,782 - ERROR - ENRIN.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:26,744 - ERROR - Failed to get ticker 'UPL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:26,787 - WARNING - No data found for ITCHOTELS
+2025-11-28 09:44:26,794 - WARNING - No data found for ENRIN
+2025-11-28 09:44:26,801 - ERROR - NTPCGREEN.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:26,855 - WARNING - No data found for NTPCGREEN
+2025-11-28 09:44:27,406 - ERROR - Failed to get ticker 'HDFCAMC.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:27,558 - ERROR - Failed to get ticker 'ABCAPITAL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:27,565 - ERROR - Failed to get ticker 'BAJAJHLDNG.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:27,577 - ERROR - Failed to get ticker 'KEI.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:27,583 - ERROR - UPL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:27,586 - WARNING - No data found for UPL
+2025-11-28 09:44:27,607 - ERROR - Failed to get ticker 'BEL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:27,617 - ERROR - Failed to get ticker 'SUPREMEIND.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:27,657 - ERROR - Failed to get ticker 'BAJFINANCE.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:27,928 - ERROR - Failed to get ticker 'INDIANB.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:28,029 - ERROR - Failed to get ticker 'LODHA.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:28,038 - ERROR - HDFCAMC.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:28,045 - WARNING - No data found for HDFCAMC
+2025-11-28 09:44:28,439 - ERROR - KEI.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:28,445 - WARNING - No data found for KEI
+2025-11-28 09:44:28,473 - ERROR - SUPREMEIND.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:28,475 - WARNING - No data found for SUPREMEIND
+2025-11-28 09:44:28,482 - ERROR - BAJFINANCE.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:28,486 - WARNING - No data found for BAJFINANCE
+2025-11-28 09:44:28,521 - ERROR - BEL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:28,525 - WARNING - No data found for BEL
+2025-11-28 09:44:28,548 - ERROR - BAJAJHLDNG.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:28,550 - WARNING - No data found for BAJAJHLDNG
+2025-11-28 09:44:28,554 - ERROR - Failed to get ticker 'NTPC.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:28,557 - ERROR - INDIANB.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:28,558 - WARNING - No data found for INDIANB
+2025-11-28 09:44:28,565 - ERROR - ABCAPITAL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:28,568 - WARNING - No data found for ABCAPITAL
+2025-11-28 09:44:28,819 - ERROR - LODHA.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:28,824 - WARNING - No data found for LODHA
+2025-11-28 09:44:29,013 - ERROR - Failed to get ticker 'JINDALSTEL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:29,287 - ERROR - Failed to get ticker 'CIPLA.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:29,319 - ERROR - Failed to get ticker 'TVSMOTOR.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:29,342 - ERROR - Failed to get ticker 'IRB.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:29,350 - ERROR - Failed to get ticker '360ONE.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:29,456 - ERROR - Failed to get ticker 'APOLLOHOSP.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:29,493 - ERROR - NTPC.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:29,496 - WARNING - No data found for NTPC
+2025-11-28 09:44:29,508 - ERROR - Failed to get ticker 'MUTHOOTFIN.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:29,513 - ERROR - Failed to get ticker 'COALINDIA.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:29,516 - ERROR - Failed to get ticker 'GLENMARK.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:29,874 - ERROR - CIPLA.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:29,889 - WARNING - No data found for CIPLA
+2025-11-28 09:44:30,009 - ERROR - TVSMOTOR.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:30,013 - WARNING - No data found for TVSMOTOR
+2025-11-28 09:44:30,034 - ERROR - APOLLOHOSP.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:30,036 - WARNING - No data found for APOLLOHOSP
+2025-11-28 09:44:30,049 - ERROR - 360ONE.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:30,053 - ERROR - IRB.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:30,054 - WARNING - No data found for 360ONE
+2025-11-28 09:44:30,056 - WARNING - No data found for IRB
+2025-11-28 09:44:30,059 - ERROR - JINDALSTEL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:30,064 - WARNING - No data found for JINDALSTEL
+2025-11-28 09:44:30,302 - ERROR - Failed to get ticker 'PFC.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:30,386 - ERROR - GLENMARK.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:30,390 - WARNING - No data found for GLENMARK
+2025-11-28 09:44:30,425 - ERROR - COALINDIA.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:30,430 - WARNING - No data found for COALINDIA
+2025-11-28 09:44:30,448 - ERROR - MUTHOOTFIN.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:30,450 - WARNING - No data found for MUTHOOTFIN
+2025-11-28 09:44:30,698 - ERROR - Failed to get ticker 'AXISBANK.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:30,851 - ERROR - Failed to get ticker 'BAJAJHFL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:30,870 - ERROR - Failed to get ticker 'BAJAJ-AUTO.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:30,892 - ERROR - Failed to get ticker 'INDIGO.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:30,906 - ERROR - Failed to get ticker 'PRESTIGE.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:30,918 - ERROR - Failed to get ticker 'LICHSGFIN.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:31,155 - ERROR - PFC.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:31,165 - WARNING - No data found for PFC
+2025-11-28 09:44:31,223 - ERROR - Failed to get ticker 'BIOCON.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:31,250 - ERROR - AXISBANK.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:31,253 - WARNING - No data found for AXISBANK
+2025-11-28 09:44:31,267 - ERROR - Failed to get ticker 'NAUKRI.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:31,550 - ERROR - BAJAJHFL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:31,555 - WARNING - No data found for BAJAJHFL
+2025-11-28 09:44:31,591 - ERROR - PRESTIGE.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:31,593 - WARNING - No data found for PRESTIGE
+2025-11-28 09:44:31,596 - ERROR - INDIGO.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:31,599 - WARNING - No data found for INDIGO
+2025-11-28 09:44:31,603 - ERROR - Failed to get ticker 'IDEA.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:31,877 - ERROR - Failed to get ticker 'HINDZINC.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:31,906 - ERROR - BIOCON.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:31,910 - WARNING - No data found for BIOCON
+2025-11-28 09:44:31,924 - ERROR - Failed to get ticker 'APLAPOLLO.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:32,190 - ERROR - NAUKRI.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:32,196 - WARNING - No data found for NAUKRI
+2025-11-28 09:44:32,203 - ERROR - Failed to get ticker 'ULTRACEMCO.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:32,274 - ERROR - Failed to get ticker 'ADANIPOWER.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:32,300 - ERROR - IDEA.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:32,308 - WARNING - No data found for IDEA
+2025-11-28 09:44:32,593 - ERROR - APLAPOLLO.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:32,598 - WARNING - No data found for APLAPOLLO
+2025-11-28 09:44:32,614 - ERROR - Failed to get ticker 'MARUTI.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:32,632 - ERROR - HINDZINC.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:32,640 - WARNING - No data found for HINDZINC
+2025-11-28 09:44:32,646 - ERROR - Failed to get ticker 'HAVELLS.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:32,850 - ERROR - BAJAJ-AUTO.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:32,852 - ERROR - LICHSGFIN.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:32,855 - WARNING - No data found for BAJAJ-AUTO
+2025-11-28 09:44:32,861 - WARNING - No data found for LICHSGFIN
+2025-11-28 09:44:33,093 - ERROR - Failed to get ticker 'PIDILITIND.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:33,108 - ERROR - Failed to get ticker 'AUROPHARMA.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:33,118 - ERROR - ADANIPOWER.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:33,125 - WARNING - No data found for ADANIPOWER
+2025-11-28 09:44:33,123 - ERROR - MARUTI.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:33,128 - WARNING - No data found for MARUTI
+2025-11-28 09:44:33,173 - ERROR - Failed to get ticker 'BDL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:33,419 - ERROR - Failed to get ticker 'BANKBARODA.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:33,486 - ERROR - HAVELLS.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:33,489 - ERROR - Failed to get ticker 'ATGL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:33,493 - WARNING - No data found for HAVELLS
+2025-11-28 09:44:33,525 - ERROR - Failed to get ticker 'RELIANCE.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:33,805 - ERROR - Failed to get ticker 'ITC.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:33,891 - ERROR - PIDILITIND.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:33,896 - WARNING - No data found for PIDILITIND
+2025-11-28 09:44:33,931 - ERROR - Failed to get ticker 'MANKIND.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:33,949 - ERROR - AUROPHARMA.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:33,951 - WARNING - No data found for AUROPHARMA
+2025-11-28 09:44:33,954 - ERROR - BDL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:33,958 - WARNING - No data found for BDL
+2025-11-28 09:44:33,967 - ERROR - BANKBARODA.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:33,971 - WARNING - No data found for BANKBARODA
+2025-11-28 09:44:34,241 - ERROR - ITC.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:34,243 - WARNING - No data found for ITC
+2025-11-28 09:44:34,291 - ERROR - ATGL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:34,293 - WARNING - No data found for ATGL
+2025-11-28 09:44:34,359 - ERROR - Failed to get ticker 'INDUSINDBK.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:34,374 - ERROR - RELIANCE.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:34,375 - WARNING - No data found for RELIANCE
+2025-11-28 09:44:34,749 - ERROR - ULTRACEMCO.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:34,758 - WARNING - No data found for ULTRACEMCO
+2025-11-28 09:44:34,781 - ERROR - Failed to get ticker 'COLPAL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:34,813 - ERROR - MANKIND.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:34,818 - WARNING - No data found for MANKIND
+2025-11-28 09:44:34,860 - ERROR - Failed to get ticker 'OIL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:34,877 - ERROR - Failed to get ticker 'M&M.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:34,883 - ERROR - Failed to get ticker 'ASTRAL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:34,889 - ERROR - Failed to get ticker 'TATASTEEL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:35,155 - ERROR - Failed to get ticker 'GMRAIRPORT.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:35,233 - ERROR - Failed to get ticker 'HINDPETRO.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:35,310 - ERROR - INDUSINDBK.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:35,312 - WARNING - No data found for INDUSINDBK
+2025-11-28 09:44:35,607 - ERROR - Failed to get ticker 'BANKINDIA.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:35,624 - ERROR - ASTRAL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:35,626 - WARNING - No data found for ASTRAL
+2025-11-28 09:44:35,684 - ERROR - GMRAIRPORT.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:35,688 - WARNING - No data found for GMRAIRPORT
+2025-11-28 09:44:35,768 - ERROR - M&M.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:35,774 - WARNING - No data found for M&M
+2025-11-28 09:44:35,795 - ERROR - Failed to get ticker 'JUBLFOOD.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:35,801 - ERROR - OIL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:35,804 - WARNING - No data found for OIL
+2025-11-28 09:44:35,829 - ERROR - TATASTEEL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:35,832 - ERROR - COLPAL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:35,835 - WARNING - No data found for TATASTEEL
+2025-11-28 09:44:35,837 - WARNING - No data found for COLPAL
+2025-11-28 09:44:36,199 - ERROR - Failed to get ticker 'GRASIM.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:36,235 - ERROR - Failed to get ticker 'HCLTECH.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:36,268 - ERROR - HINDPETRO.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:36,271 - WARNING - No data found for HINDPETRO
+2025-11-28 09:44:36,275 - ERROR - Failed to get ticker 'DIXON.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:36,333 - ERROR - BANKINDIA.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:36,334 - WARNING - No data found for BANKINDIA
+2025-11-28 09:44:36,640 - ERROR - JUBLFOOD.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:36,645 - ERROR - Failed to get ticker 'POWERINDIA.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:36,648 - WARNING - No data found for JUBLFOOD
+2025-11-28 09:44:36,663 - ERROR - Failed to get ticker 'SIEMENS.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:36,678 - ERROR - Failed to get ticker 'MOTHERSON.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:36,682 - ERROR - Failed to get ticker 'BPCL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:36,974 - ERROR - Failed to get ticker 'SONACOMS.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:37,002 - ERROR - HCLTECH.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:37,005 - WARNING - No data found for HCLTECH
+2025-11-28 09:44:37,083 - ERROR - GRASIM.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:37,093 - WARNING - No data found for GRASIM
+2025-11-28 09:44:37,116 - ERROR - DIXON.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:37,119 - WARNING - No data found for DIXON
+2025-11-28 09:44:37,121 - ERROR - Failed to get ticker 'POLICYBZR.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:37,388 - ERROR - SIEMENS.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:37,390 - WARNING - No data found for SIEMENS
+2025-11-28 09:44:37,481 - ERROR - MOTHERSON.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:37,487 - WARNING - No data found for MOTHERSON
+2025-11-28 09:44:37,541 - ERROR - POWERINDIA.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:37,546 - WARNING - No data found for POWERINDIA
+2025-11-28 09:44:37,593 - ERROR - BPCL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:37,595 - WARNING - No data found for BPCL
+2025-11-28 09:44:37,600 - ERROR - Failed to get ticker 'IOC.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:37,605 - ERROR - SONACOMS.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:37,607 - WARNING - No data found for SONACOMS
+2025-11-28 09:44:37,615 - ERROR - Failed to get ticker 'SWIGGY.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:37,937 - ERROR - Failed to get ticker 'LT.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:37,977 - ERROR - Failed to get ticker 'TECHM.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:38,026 - ERROR - POLICYBZR.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:38,029 - ERROR - Failed to get ticker 'RVNL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:38,031 - WARNING - No data found for POLICYBZR
+2025-11-28 09:44:38,275 - ERROR - Failed to get ticker 'COFORGE.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:38,288 - ERROR - Failed to get ticker 'EICHERMOT.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:38,425 - ERROR - Failed to get ticker 'TRENT.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:38,440 - ERROR - IOC.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:38,443 - WARNING - No data found for IOC
+2025-11-28 09:44:38,474 - ERROR - SWIGGY.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:38,476 - WARNING - No data found for SWIGGY
+2025-11-28 09:44:38,487 - ERROR - Failed to get ticker 'INDUSTOWER.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:38,716 - ERROR - RVNL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:38,726 - WARNING - No data found for RVNL
+2025-11-28 09:44:38,859 - ERROR - Failed to get ticker 'EXIDEIND.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:38,875 - ERROR - TECHM.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:38,878 - WARNING - No data found for TECHM
+2025-11-28 09:44:38,912 - ERROR - LT.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:38,914 - WARNING - No data found for LT
+2025-11-28 09:44:39,204 - ERROR - Failed to get ticker 'ABB.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:39,329 - ERROR - EICHERMOT.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:39,330 - ERROR - TRENT.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:39,333 - WARNING - No data found for EICHERMOT
+2025-11-28 09:44:39,336 - WARNING - No data found for TRENT
+2025-11-28 09:44:39,360 - ERROR - Failed to get ticker 'TITAN.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:39,363 - ERROR - COFORGE.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:39,366 - WARNING - No data found for COFORGE
+2025-11-28 09:44:39,368 - ERROR - Failed to get ticker 'IRFC.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:39,381 - ERROR - INDUSTOWER.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:39,382 - WARNING - No data found for INDUSTOWER
+2025-11-28 09:44:39,702 - ERROR - EXIDEIND.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:39,711 - WARNING - No data found for EXIDEIND
+2025-11-28 09:44:39,812 - ERROR - ABB.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:39,818 - WARNING - No data found for ABB
+2025-11-28 09:44:39,856 - ERROR - Failed to get ticker 'PREMIERENE.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:39,889 - ERROR - Failed to get ticker 'BRITANNIA.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:40,169 - ERROR - Failed to get ticker 'ADANIPORTS.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:40,237 - ERROR - Failed to get ticker 'M&MFIN.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:40,279 - ERROR - IRFC.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:40,285 - WARNING - No data found for IRFC
+2025-11-28 09:44:40,293 - ERROR - Failed to get ticker 'SUNPHARMA.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:40,335 - ERROR - Failed to get ticker 'SAIL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:40,349 - ERROR - TITAN.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:40,352 - WARNING - No data found for TITAN
+2025-11-28 09:44:40,367 - ERROR - Failed to get ticker 'NATIONALUM.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:40,616 - ERROR - Failed to get ticker 'UNITDSPR.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:40,786 - ERROR - BRITANNIA.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:40,789 - WARNING - No data found for BRITANNIA
+2025-11-28 09:44:40,804 - ERROR - PREMIERENE.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:40,808 - WARNING - No data found for PREMIERENE
+2025-11-28 09:44:40,818 - ERROR - ADANIPORTS.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:40,820 - WARNING - No data found for ADANIPORTS
+2025-11-28 09:44:41,076 - ERROR - NATIONALUM.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:41,077 - ERROR - SAIL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:41,081 - WARNING - No data found for NATIONALUM
+2025-11-28 09:44:41,087 - WARNING - No data found for SAIL
+2025-11-28 09:44:41,172 - ERROR - M&MFIN.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:41,177 - WARNING - No data found for M&MFIN
+2025-11-28 09:44:41,214 - ERROR - Failed to get ticker 'NESTLEIND.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:41,231 - ERROR - Failed to get ticker 'DMART.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:41,238 - ERROR - SUNPHARMA.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:41,246 - WARNING - No data found for SUNPHARMA
+2025-11-28 09:44:41,260 - ERROR - UNITDSPR.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:41,273 - WARNING - No data found for UNITDSPR
+2025-11-28 09:44:41,609 - ERROR - Failed to get ticker 'COCHINSHIP.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:41,624 - ERROR - Failed to get ticker 'CUMMINSIND.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:41,724 - ERROR - Failed to get ticker 'PERSISTENT.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:41,763 - ERROR - Failed to get ticker 'OFSS.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:41,793 - ERROR - Failed to get ticker 'JSWENERGY.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:41,820 - ERROR - NESTLEIND.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:41,824 - WARNING - No data found for NESTLEIND
+2025-11-28 09:44:41,828 - ERROR - Failed to get ticker 'BHARTIHEXA.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:42,209 - ERROR - Failed to get ticker 'PAGEIND.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:42,247 - ERROR - CUMMINSIND.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:42,250 - ERROR - DMART.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:42,253 - WARNING - No data found for CUMMINSIND
+2025-11-28 09:44:42,256 - WARNING - No data found for DMART
+2025-11-28 09:44:42,281 - ERROR - Failed to get ticker 'CANBK.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:42,285 - ERROR - COCHINSHIP.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:42,286 - WARNING - No data found for COCHINSHIP
+2025-11-28 09:44:42,525 - ERROR - BHARTIHEXA.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:42,527 - WARNING - No data found for BHARTIHEXA
+2025-11-28 09:44:42,544 - ERROR - Failed to get ticker 'NYKAA.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:42,612 - ERROR - OFSS.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:42,621 - WARNING - No data found for OFSS
+2025-11-28 09:44:42,715 - ERROR - JSWENERGY.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:42,722 - WARNING - No data found for JSWENERGY
+2025-11-28 09:44:42,734 - ERROR - PERSISTENT.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:42,736 - WARNING - No data found for PERSISTENT
+2025-11-28 09:44:43,075 - ERROR - Failed to get ticker 'HYUNDAI.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:43,143 - ERROR - CANBK.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:43,145 - WARNING - No data found for CANBK
+2025-11-28 09:44:43,193 - ERROR - PAGEIND.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:43,200 - WARNING - No data found for PAGEIND
+2025-11-28 09:44:43,199 - ERROR - Failed to get ticker 'DABUR.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:43,206 - ERROR - Failed to get ticker 'TATACONSUM.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:43,221 - ERROR - Failed to get ticker 'HDFCBANK.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:43,226 - ERROR - Failed to get ticker 'OBEROIRLTY.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:43,239 - ERROR - NYKAA.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:43,241 - WARNING - No data found for NYKAA
+2025-11-28 09:44:43,516 - ERROR - Failed to get ticker 'SUZLON.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:43,584 - ERROR - Failed to get ticker 'CHOLAFIN.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:43,712 - ERROR - HYUNDAI.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:43,715 - WARNING - No data found for HYUNDAI
+2025-11-28 09:44:43,729 - ERROR - Failed to get ticker 'ALKEM.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:44,024 - ERROR - TATACONSUM.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:44,028 - WARNING - No data found for TATACONSUM
+2025-11-28 09:44:44,073 - ERROR - Failed to get ticker 'AMBUJACEM.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:44,163 - ERROR - HDFCBANK.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:44,168 - WARNING - No data found for HDFCBANK
+2025-11-28 09:44:44,207 - ERROR - DABUR.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:44,211 - ERROR - SUZLON.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:44,213 - WARNING - No data found for DABUR
+2025-11-28 09:44:44,225 - WARNING - No data found for SUZLON
+2025-11-28 09:44:44,255 - ERROR - CHOLAFIN.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:44,259 - ERROR - OBEROIRLTY.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:44,263 - ERROR - Failed to get ticker 'IRCTC.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:44,265 - WARNING - No data found for CHOLAFIN
+2025-11-28 09:44:44,267 - WARNING - No data found for OBEROIRLTY
+2025-11-28 09:44:44,552 - ERROR - Failed to get ticker 'TORNTPHARM.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:44,675 - ERROR - ALKEM.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:44,682 - WARNING - No data found for ALKEM
+2025-11-28 09:44:44,710 - ERROR - Failed to get ticker 'TATATECH.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:44,725 - ERROR - AMBUJACEM.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:44,726 - WARNING - No data found for AMBUJACEM
+2025-11-28 09:44:44,983 - ERROR - Failed to get ticker 'GODFRYPHLP.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:45,001 - ERROR - Failed to get ticker 'HUDCO.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:45,098 - ERROR - Failed to get ticker 'PAYTM.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:45,154 - ERROR - Failed to get ticker 'ICICIGI.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:45,189 - ERROR - IRCTC.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:45,194 - WARNING - No data found for IRCTC
+2025-11-28 09:44:45,213 - ERROR - Failed to get ticker 'SBICARD.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:45,606 - ERROR - HUDCO.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:45,608 - WARNING - No data found for HUDCO
+2025-11-28 09:44:45,647 - ERROR - TATATECH.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:45,652 - WARNING - No data found for TATATECH
+2025-11-28 09:44:45,691 - ERROR - Failed to get ticker 'KALYANKJIL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:45,707 - ERROR - PAYTM.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:45,710 - ERROR - TORNTPHARM.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:45,713 - WARNING - No data found for PAYTM
+2025-11-28 09:44:45,716 - WARNING - No data found for TORNTPHARM
+2025-11-28 09:44:45,720 - ERROR - Failed to get ticker 'GODREJCP.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:45,725 - ERROR - GODFRYPHLP.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:45,726 - WARNING - No data found for GODFRYPHLP
+2025-11-28 09:44:45,948 - ERROR - ICICIGI.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:45,953 - WARNING - No data found for ICICIGI
+2025-11-28 09:44:46,062 - ERROR - SBICARD.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:46,064 - WARNING - No data found for SBICARD
+2025-11-28 09:44:46,300 - ERROR - Failed to get ticker 'MAXHEALTH.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:46,323 - ERROR - Failed to get ticker 'TCS.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:46,365 - ERROR - Failed to get ticker 'WAAREEENER.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:46,381 - ERROR - Failed to get ticker 'SBIN.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:46,389 - ERROR - Failed to get ticker 'NMDC.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:46,811 - ERROR - GODREJCP.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:46,816 - WARNING - No data found for GODREJCP
+2025-11-28 09:44:46,909 - ERROR - Failed to get ticker 'PIIND.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:47,115 - ERROR - Failed to get ticker 'ONGC.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:47,149 - ERROR - KALYANKJIL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:47,156 - WARNING - No data found for KALYANKJIL
+2025-11-28 09:44:47,183 - ERROR - TCS.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:47,185 - ERROR - Failed to get ticker 'DLF.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:47,189 - ERROR - MAXHEALTH.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:47,190 - WARNING - No data found for TCS
+2025-11-28 09:44:47,195 - WARNING - No data found for MAXHEALTH
+2025-11-28 09:44:47,469 - ERROR - NMDC.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:47,473 - WARNING - No data found for NMDC
+2025-11-28 09:44:47,547 - ERROR - WAAREEENER.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:47,549 - WARNING - No data found for WAAREEENER
+2025-11-28 09:44:47,574 - ERROR - Failed to get ticker 'UNIONBANK.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:47,577 - ERROR - SBIN.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:47,579 - WARNING - No data found for SBIN
+2025-11-28 09:44:47,826 - ERROR - PIIND.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:47,832 - WARNING - No data found for PIIND
+2025-11-28 09:44:47,837 - ERROR - Failed to get ticker 'ADANIENT.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:47,951 - ERROR - Failed to get ticker 'MARICO.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:47,989 - ERROR - Failed to get ticker 'CONCOR.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:48,007 - ERROR - DLF.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:48,009 - WARNING - No data found for DLF
+2025-11-28 09:44:48,025 - ERROR - ONGC.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:48,028 - WARNING - No data found for ONGC
+2025-11-28 09:44:48,302 - ERROR - Failed to get ticker 'MRF.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:48,438 - ERROR - UNIONBANK.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:48,440 - WARNING - No data found for UNIONBANK
+2025-11-28 09:44:48,445 - ERROR - Failed to get ticker 'FEDERALBNK.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:48,453 - ERROR - Failed to get ticker 'HINDALCO.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:48,461 - ERROR - ADANIENT.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:48,463 - WARNING - No data found for ADANIENT
+2025-11-28 09:44:48,469 - ERROR - Failed to get ticker 'WIPRO.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:48,740 - ERROR - Failed to get ticker 'PNB.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:48,752 - ERROR - CONCOR.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:48,760 - WARNING - No data found for CONCOR
+2025-11-28 09:44:48,860 - ERROR - Failed to get ticker 'ASHOKLEY.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:48,865 - ERROR - MARICO.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:48,870 - WARNING - No data found for MARICO
+2025-11-28 09:44:48,924 - ERROR - MRF.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:48,926 - WARNING - No data found for MRF
+2025-11-28 09:44:49,317 - ERROR - Failed to get ticker 'HEROMOTOCO.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:49,397 - ERROR - FEDERALBNK.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:49,405 - WARNING - No data found for FEDERALBNK
+2025-11-28 09:44:49,424 - ERROR - WIPRO.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:49,440 - WARNING - No data found for WIPRO
+2025-11-28 09:44:49,442 - ERROR - Failed to get ticker 'TIINDIA.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:49,464 - ERROR - ASHOKLEY.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:49,468 - WARNING - No data found for ASHOKLEY
+2025-11-28 09:44:49,472 - ERROR - Failed to get ticker 'ZYDUSLIFE.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:49,474 - ERROR - PNB.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:49,487 - ERROR - Failed to get ticker 'PHOENIXLTD.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:49,493 - WARNING - No data found for PNB
+2025-11-28 09:44:49,510 - ERROR - HINDALCO.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:49,527 - WARNING - No data found for HINDALCO
+2025-11-28 09:44:50,011 - ERROR - Failed to get ticker 'RECLTD.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:50,032 - ERROR - Failed to get ticker 'MAZDOCK.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:50,064 - ERROR - HEROMOTOCO.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:50,070 - WARNING - No data found for HEROMOTOCO
+2025-11-28 09:44:50,102 - ERROR - Failed to get ticker 'AUBANK.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:50,128 - ERROR - TIINDIA.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:50,136 - ERROR - ZYDUSLIFE.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:50,138 - WARNING - No data found for TIINDIA
+2025-11-28 09:44:50,140 - ERROR - PHOENIXLTD.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:50,141 - WARNING - No data found for ZYDUSLIFE
+2025-11-28 09:44:50,146 - ERROR - Failed to get ticker 'FORTIS.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:50,150 - WARNING - No data found for PHOENIXLTD
+2025-11-28 09:44:50,494 - ERROR - Failed to get ticker 'JIOFIN.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:50,544 - ERROR - Failed to get ticker 'ASIANPAINT.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:50,880 - ERROR - Failed to get ticker 'HDFCLIFE.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:50,904 - ERROR - Failed to get ticker 'BAJAJFINSV.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:50,950 - ERROR - RECLTD.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:50,952 - WARNING - No data found for RECLTD
+2025-11-28 09:44:50,970 - ERROR - AUBANK.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:50,975 - WARNING - No data found for AUBANK
+2025-11-28 09:44:50,978 - ERROR - MAZDOCK.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:50,986 - WARNING - No data found for MAZDOCK
+2025-11-28 09:44:51,030 - ERROR - Failed to get ticker 'TATAELXSI.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:51,046 - ERROR - FORTIS.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:51,050 - WARNING - No data found for FORTIS
+2025-11-28 09:44:51,062 - ERROR - Failed to get ticker 'TORNTPOWER.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:51,425 - ERROR - Failed to get ticker 'HAL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:51,482 - ERROR - Failed to get ticker 'ACC.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:51,511 - ERROR - BAJAJFINSV.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:51,513 - WARNING - No data found for BAJAJFINSV
+2025-11-28 09:44:51,565 - ERROR - ASIANPAINT.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:51,573 - WARNING - No data found for ASIANPAINT
+2025-11-28 09:44:51,591 - ERROR - HDFCLIFE.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:51,594 - WARNING - No data found for HDFCLIFE
+2025-11-28 09:44:51,599 - ERROR - JIOFIN.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:51,601 - WARNING - No data found for JIOFIN
+2025-11-28 09:44:51,607 - ERROR - Failed to get ticker 'MPHASIS.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:51,893 - ERROR - Failed to get ticker 'HINDUNILVR.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:51,984 - ERROR - TORNTPOWER.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:51,991 - WARNING - No data found for TORNTPOWER
+2025-11-28 09:44:52,034 - ERROR - TATAELXSI.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:52,036 - WARNING - No data found for TATAELXSI
+2025-11-28 09:44:52,042 - ERROR - HAL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:52,043 - WARNING - No data found for HAL
+2025-11-28 09:44:52,315 - ERROR - Failed to get ticker 'INFY.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:52,335 - ERROR - ACC.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:52,340 - WARNING - No data found for ACC
+2025-11-28 09:44:52,419 - ERROR - MPHASIS.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:52,425 - WARNING - No data found for MPHASIS
+2025-11-28 09:44:52,487 - ERROR - Failed to get ticker 'ADANIENSOL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:52,489 - ERROR - Failed to get ticker 'GODREJPROP.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:52,492 - ERROR - Failed to get ticker 'SHRIRAMFIN.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:52,857 - ERROR - Failed to get ticker 'IREDA.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:52,862 - ERROR - Failed to get ticker 'BHEL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:52,927 - ERROR - Failed to get ticker 'DUMMYTATAM.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:53,033 - ERROR - INFY.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:53,036 - WARNING - No data found for INFY
+2025-11-28 09:44:53,041 - ERROR - HINDUNILVR.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:53,045 - WARNING - No data found for HINDUNILVR
+2025-11-28 09:44:53,056 - ERROR - Failed to get ticker 'BOSCHLTD.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:53,311 - ERROR - Failed to get ticker 'ICICIBANK.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:53,369 - ERROR - BHEL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:53,375 - WARNING - No data found for BHEL
+2025-11-28 09:44:53,462 - ERROR - DUMMYTATAM.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:53,465 - WARNING - No data found for DUMMYTATAM
+2025-11-28 09:44:53,550 - ERROR - ADANIENSOL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:53,561 - WARNING - No data found for ADANIENSOL
+2025-11-28 09:44:53,582 - ERROR - SHRIRAMFIN.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:53,586 - ERROR - IREDA.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:53,588 - WARNING - No data found for SHRIRAMFIN
+2025-11-28 09:44:53,591 - WARNING - No data found for IREDA
+2025-11-28 09:44:53,596 - ERROR - GODREJPROP.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:53,600 - WARNING - No data found for GODREJPROP
+2025-11-28 09:44:53,854 - ERROR - ICICIBANK.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:53,858 - WARNING - No data found for ICICIBANK
+2025-11-28 09:44:53,927 - ERROR - Failed to get ticker 'SOLARINDS.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:53,947 - ERROR - Failed to get ticker 'ETERNAL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:54,125 - ERROR - Failed to get ticker 'CGPOWER.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:54,131 - ERROR - Failed to get ticker 'PATANJALI.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:54,139 - ERROR - BOSCHLTD.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:54,141 - WARNING - No data found for BOSCHLTD
+2025-11-28 09:44:54,560 - ERROR - ETERNAL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:54,576 - WARNING - No data found for ETERNAL
+2025-11-28 09:44:54,593 - ERROR - Failed to get ticker 'TATAPOWER.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:54,621 - ERROR - SOLARINDS.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:54,624 - WARNING - No data found for SOLARINDS
+2025-11-28 09:44:54,666 - ERROR - Failed to get ticker 'BSE.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:54,686 - ERROR - Failed to get ticker 'ADANIGREEN.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:54,692 - ERROR - Failed to get ticker 'KOTAKBANK.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:54,700 - ERROR - Failed to get ticker 'TATAMOTORS.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:54,954 - ERROR - Failed to get ticker 'VBL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:55,024 - ERROR - CGPOWER.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:55,027 - WARNING - No data found for CGPOWER
+2025-11-28 09:44:55,388 - ERROR - PATANJALI.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:55,397 - WARNING - No data found for PATANJALI
+2025-11-28 09:44:55,428 - ERROR - ADANIGREEN.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:55,435 - WARNING - No data found for ADANIGREEN
+2025-11-28 09:44:55,487 - ERROR - BSE.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:55,492 - WARNING - No data found for BSE
+2025-11-28 09:44:55,514 - ERROR - Failed to get ticker 'LICI.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:55,600 - ERROR - KOTAKBANK.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:55,609 - WARNING - No data found for KOTAKBANK
+2025-11-28 09:44:55,691 - ERROR - Failed to get ticker 'VMM.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:55,746 - ERROR - TATAPOWER.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:55,748 - WARNING - No data found for TATAPOWER
+2025-11-28 09:44:56,182 - ERROR - VBL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:56,187 - WARNING - No data found for VBL
+2025-11-28 09:44:56,321 - ERROR - Failed to get ticker 'IGL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:56,375 - ERROR - Failed to get ticker 'IDFCFIRSTB.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:56,378 - ERROR - Failed to get ticker 'SHREECEM.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:56,455 - ERROR - Failed to get ticker 'VEDL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:56,461 - ERROR - TATAMOTORS.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:56,465 - WARNING - No data found for TATAMOTORS
+2025-11-28 09:44:56,800 - ERROR - Failed to get ticker 'MFSL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:56,822 - ERROR - LICI.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:56,825 - WARNING - No data found for LICI
+2025-11-28 09:44:56,830 - ERROR - Failed to get ticker 'LTF.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:57,223 - ERROR - IGL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:57,226 - WARNING - No data found for IGL
+2025-11-28 09:44:57,248 - ERROR - VMM.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:57,250 - WARNING - No data found for VMM
+2025-11-28 09:44:57,280 - ERROR - SHREECEM.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:57,284 - WARNING - No data found for SHREECEM
+2025-11-28 09:44:57,584 - ERROR - MFSL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:57,589 - WARNING - No data found for MFSL
+2025-11-28 09:44:57,658 - ERROR - VEDL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:57,664 - WARNING - No data found for VEDL
+2025-11-28 09:44:57,684 - ERROR - Failed to get ticker 'POLYCAB.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:57,703 - ERROR - Failed to get ticker 'GAIL.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:57,720 - ERROR - IDFCFIRSTB.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:57,722 - WARNING - No data found for IDFCFIRSTB
+2025-11-28 09:44:57,944 - ERROR - Failed to get ticker 'LTIM.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:57,976 - ERROR - Failed to get ticker 'SRF.NS' reason: Expecting value: line 1 column 1 (char 0)
+2025-11-28 09:44:57,992 - ERROR - LTF.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:57,995 - WARNING - No data found for LTF
+2025-11-28 09:44:58,361 - ERROR - POLYCAB.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:58,362 - WARNING - No data found for POLYCAB
+2025-11-28 09:44:58,368 - ERROR - GAIL.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:58,370 - WARNING - No data found for GAIL
+2025-11-28 09:44:58,376 - ERROR - SRF.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:58,377 - WARNING - No data found for SRF
+2025-11-28 09:44:58,380 - ERROR - LTIM.NS: No price data found, symbol may be delisted (period=3d)
+2025-11-28 09:44:58,382 - WARNING - No data found for LTIM

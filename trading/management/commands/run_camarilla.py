@@ -9,7 +9,7 @@ from datetime import date, datetime
 import importlib.util
 
 # Add the path to your existing script
-SCRIPT_PATH = '/Users/vivekanandan/PycharmProjects/DjangoProject/Tradeshelf/scripts/Camrilla_2025/Camrilla_2025.py'
+SCRIPT_PATH = '/home/vivek/Documents/Trading/Tradeshelf/scripts/Camrilla_2025/Camrilla_2025.py'
 
 
 class Command(BaseCommand):
