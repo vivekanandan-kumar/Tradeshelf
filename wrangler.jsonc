@@ -2,7 +2,7 @@
   "name": "tradeshelf",
   "compatibility_date": "2025-11-30",
   "assets": {
-    "directory": "./staticfiles",
+    "directory": "./build"
     "browser_ttl": 86400
   }
 }
