@@ -2,14 +2,7 @@
   "name": "tradeshelf",
   "compatibility_date": "2025-11-30",
   "assets": {
-<<<<<<< HEAD
-    "directory": "./build"
-    "browser_ttl": 86400
-  }
-}
-=======
     "directory": "./staticfiles",
     "browser_ttl": 86400
   }
 }
->>>>>>> f4cab99 (Add Cloudflare Wrangler configuration)
